@@ -1,0 +1,38 @@
+
+.header {
+    margin: 0 auto 40px;
+    p {
+        font-family: 'ITC Serif Gothic';
+        text-shadow: #000 1px 1px 0, 2px 2px 1px #fff;
+        text-align: left;
+        color: #FFE81F;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        font-size: 22px;
+        @media (min-width: 767px) {
+            font-size: 42px;
+        }
+        &::before,
+        &::after {
+            background-color: rgba(255,232,31, .6);
+            content: "";
+            display: inline-block;
+            height: 2px;
+            position: relative;
+            vertical-align: middle;
+            width: 5%;
+            @media (min-width: 767px) {
+                width: 20%;
+            }
+        }
+        &::before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
+        &::after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
+    }
+}
