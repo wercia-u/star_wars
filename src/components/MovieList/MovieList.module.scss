@@ -1,0 +1,31 @@
+button {
+    border: 2px solid yellow;
+    background: rgba(0,0,0, 0.4);;
+    color: #fff;
+    width: 150px;
+    height: 45px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px 20px;
+    cursor: pointer;
+    &:disabled {
+        border-color: #40454B;
+        color: #444A50;
+        cursor: auto;
+    }
+}
+.footer {
+    margin: auto;
+    text-align: center;
+}
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:stretch;
+    width: 75%;
+    justify-content: space-around;
+    margin: auto;
+}
